@@ -1,67 +1,136 @@
-# Ruby Course
+<!-- TABLE OF CONTENTS -->
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+# 📗 Table of Contents
 
-## Set-up Rubocop GitHub Action
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 MyEnumerable ](#-myenumerable-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-[Rubocop](https://www.rubocop.org/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
+<!-- PROJECT DESCRIPTION -->
 
-This GitHub Action is going to run [Rubocop](https://docs.rubocop.org/en/stable/) to help you find style issues.
+# 📖 MyEnumerable <a name="about-project"></a>
 
-Please do the following **steps in this order**:
+**Morse Code** is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations.
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+## 🛠 Built With <a name="built-with"></a>
 
-![gh actions checks](../assets/images/gh-actions-rubocop-linters-checks.png)
+### Tech Stack <a name="tech-stack"></a>
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+<details>
+<summary>Server</summary>
+  <ul>
+    <li><a href="https://guides.rubyonrails.org/getting_started.html">Ruby</a></li>
+  </ul>
+</details>
 
-![gh actions failing checks](../assets/images/gh-actions-rubocop-failing-checks.png)
+<!-- Features -->
 
-## [OPTIONAL]Set-up RSpec GitHub Action
+### Key Features <a name="key-features"></a>
 
-You can run your tests with GitHub Actions to ensure that they are passing before merging a PR.
+- Run a program using the command line.
+- Use Ruby syntax for basic programming operations.
+- Use Ruby to solve basic coding challenges.
 
-To use the GitHub Action to run your tests, please do the following **steps in this order**:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Add a copy of [`.github/workflows/tests.yml`](.github/workflows/tests.yml) to your `.github/workflows` folder.
-    - **Remember** to use the file linked above
-    - Do not modify or delete the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) file that should already be in that folder.
-    - RSpec by default will try to run any file ending in `_spec.rb` inside the `spec` folder. Make sure to follow this convention for your tests files so `rspec` can run your spec files.
-    - You can modify the [`.github/workflows/tests.yml`](.github/workflows/tests.yml) file to better fit your custom needs.
-3. When you open your pull request you should see the result of the GitHub Action:
+<!-- LIVE DEMO -->
 
-![gh actions checks](../assets/images/gh-actions-rspec-tests-checks.png)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Click on the `Details` link of the test action to check the results of your tests.
+> There are no live demos for this project.
 
-## Set-up linters in your local env
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### [RuboCop](https://docs.rubocop.org/en/stable/)
+<!-- GETTING STARTED -->
 
-1. Add this line to the `Gemfile`
-    ```
-    gem 'rubocop', '>= 1.0', '< 2.0'
-    ```
-    *not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html).*
-2. Run `bundle install`.
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
-4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`.
-6. Fix linter errors.
-7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+## 💻 Getting Started <a name="getting-started"></a>
 
-## Troubleshooting
+To get a local copy up and running, follow these steps:
 
-- While using Colorize gem, if you are facing errors with Rspec related to 
-    ```bash
-    LoadError:
-    cannot load such file -- colorize
-    ```
-    please remove ```--deployment``` from line no. [26](https://github.com/shubham14p3/Ruby-capstone-project/blob/ca86784cc88bea7c933e329c0953f07e21bcf6ca/.github/workflows/tests.yml#L16) of test.yml file.
+To get a local copy up and running, follow these steps:
+- Create a local directory where you can clone the project
+- Clone the project to your directory by running
+  - `https://github.com/Caren-Koroeny/decode-morse.git`
+- Run the code with ruby
+
+### Prerequisites
+
+In order to run this project you need:
+
+- Git and GitHub
+- A code editor
+- Ruby
+
+### Setup
+
+Clone this repository to your desired folder:
+
+- Create a local directory where you can clone the project
+- Clone the project to your directory by running
+  - ``
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ilyass atlassi**
+
+- GitHub: [@ilyassatlass](https://github.com/ilyassatlass)
+- Twitter: [@ilyass_atlassi](https://twitter.com/ilyass_atlassi)
+- LinkedIn: [Ilyass Atlassi](https://www.linkedin.com/in/ilyassatlassi/)
+
+👤 
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **More enumarable features**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project kindly leave a ⭐
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for the great resources shared.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
