@@ -16,3 +16,6 @@ def decode_char(char)
     def decode_fullmessage(message)
         puts message.split('  ').map { |char| decode_word(char) }.join(' ')
       end
+      decode_char('.-')
+      decode_word('-- -.--')
+      decode_fullmessage('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
